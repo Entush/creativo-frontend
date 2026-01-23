@@ -6,9 +6,11 @@ import SectionAccent from "@/components/ui/SectionAccent";
 import Button from "@/components/ui/Button";
 import FunShape from "@/components/ui/FunShape";
 
-
 import type { Metadata } from "next";
 
+// ==========================================
+// SEO METADATA (TIDAK DIUBAH, SUDAH BAGUS)
+// ==========================================
 export const metadata: Metadata = {
   title: "Creativo School | Kursus Desain & Kreatif di Surabaya",
   description:
@@ -32,12 +34,14 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return (  
+  return (
     <main className="bg-white text-neutral-800">
-    <HeroSlider />
+      <HeroSlider />
 
-
-      {/* HOME HERO */}
+      {/* ==========================================
+          HOME HERO
+          👉 UPDATE TEKS (lebih jelas & konsisten)
+      ========================================== */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -45,13 +49,14 @@ export default function HomePage() {
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Ruang Belajar Kreatif <br className="hidden sm:block" />
-              untuk Anak dan Remaja
+              untuk Anak, Remaja, dan Dewasa
             </h1>
 
             <p className="text-neutral-600 text-lg leading-relaxed max-w-xl">
               Creativo School adalah ruang belajar kreatif berbasis digital
-              yang membantu anak dan remaja mengembangkan potensi desain,
-              ilustrasi, dan keterampilan kreatif sesuai minatnya.
+              yang mendampingi siswa mengembangkan kemampuan desain,
+              ilustrasi, dan keterampilan kreatif sesuai minat dan tahap
+              belajarnya.
             </p>
 
             <div className="flex gap-4">
@@ -80,19 +85,23 @@ export default function HomePage() {
 
       <GoogleReviews />
 
-      {/* POSITIONING */}
+      {/* ==========================================
+          POSITIONING
+          👉 UPDATE TEKS (lebih kuat & konsisten)
+      ========================================== */}
       <section className="bg-neutral-50">
         <div className="max-w-6xl mx-auto px-6 py-24 space-y-14">
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Pendampingan Belajar yang Disesuaikan dengan Setiap Individu
+              Pendampingan Belajar yang Disesuaikan dengan Setiap Siswa
             </h2>
 
             <SectionAccent />
 
             <p className="text-neutral-600 leading-relaxed">
-              Setiap proses belajar dirancang dengan mempertimbangkan
-              kebutuhan, minat, dan ritme masing-masing siswa.
+              Setiap proses pembelajaran di Creativo dirancang dengan
+              mempertimbangkan usia, minat, dan ritme belajar masing-masing
+              siswa agar hasil belajar lebih optimal dan berkelanjutan.
             </p>
           </div>
 
@@ -100,28 +109,32 @@ export default function HomePage() {
             <div className="space-y-3">
               <h3 className="font-semibold">Personal</h3>
               <p className="text-sm text-neutral-600">
-                Pendekatan individual untuk setiap siswa.
+                Pendekatan belajar yang menyesuaikan karakter dan kebutuhan
+                setiap siswa.
               </p>
             </div>
 
             <div className="space-y-3">
               <h3 className="font-semibold">Terarah</h3>
               <p className="text-sm text-neutral-600">
-                Tujuan belajar jelas dan terstruktur.
+                Materi dan tujuan belajar disusun secara jelas dan terstruktur.
               </p>
             </div>
 
             <div className="space-y-3">
               <h3 className="font-semibold">Bertanggung Jawab</h3>
               <p className="text-sm text-neutral-600">
-                Proses yang dapat dipertanggungjawabkan.
+                Proses pembelajaran dipantau dan dievaluasi secara berkala.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PROGRAM HIGHLIGHT */}
+      {/* ==========================================
+          PROGRAM HIGHLIGHT
+          👉 UPDATE TEKS (sinkron dengan halaman Program)
+      ========================================== */}
       <section className="relative max-w-6xl mx-auto px-6 py-24">
         <FunShape position="bottom-right" />
 
@@ -133,7 +146,9 @@ export default function HomePage() {
           <SectionAccent align="center" />
 
           <p className="text-neutral-600 leading-relaxed">
-            Program disusun berdasarkan usia dan kebutuhan belajar.
+            Beragam program kreatif yang dirancang berdasarkan usia,
+            minat, dan kebutuhan belajar siswa, dengan metode yang
+            fun dan terstruktur.
           </p>
         </div>
 
@@ -143,7 +158,6 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
     </main>
   );
 }
